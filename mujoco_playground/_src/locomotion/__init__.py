@@ -39,6 +39,10 @@ from mujoco_playground._src.locomotion.spot import joystick as spot_joystick
 from mujoco_playground._src.locomotion.spot import joystick_gait_tracking as spot_joystick_gait_tracking
 from mujoco_playground._src.locomotion.t1 import joystick as t1_joystick
 from mujoco_playground._src.locomotion.t1 import randomize as t1_randomize
+#new
+from mujoco_playground._src.locomotion.step_10_dof_env import Step10DofEnv as step10dof_joystick
+from mujoco_playground._src.locomotion.step_10_dof_config import Step10DofConfig as step10dof_joystick_config
+
 
 _envs = {
     "BarkourJoystick": barkour_joystick.Joystick,
@@ -79,6 +83,9 @@ _envs = {
     "T1JoystickRoughTerrain": functools.partial(
         t1_joystick.Joystick, task="rough_terrain"
     ),
+
+    #new
+    "Step10DofJoystick": step10dof_joystick,
 }
 
 _cfgs = {
@@ -104,6 +111,8 @@ _cfgs = {
     "SpotJoystickGaitTracking": spot_joystick_gait_tracking.default_config,
     "T1JoystickFlatTerrain": t1_joystick.default_config,
     "T1JoystickRoughTerrain": t1_joystick.default_config,
+
+    "Step10DofJoystick": step10dof_joystick_config,
 }
 
 _randomizer = {
