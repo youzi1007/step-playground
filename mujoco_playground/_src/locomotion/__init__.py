@@ -40,8 +40,8 @@ from mujoco_playground._src.locomotion.spot import joystick_gait_tracking as spo
 from mujoco_playground._src.locomotion.t1 import joystick as t1_joystick
 from mujoco_playground._src.locomotion.t1 import randomize as t1_randomize
 #new
-from mujoco_playground._src.locomotion.step_10_dof_env import Step10DofEnv as step10dof_joystick
-from mujoco_playground._src.locomotion.step_10_dof_config import Step10DofConfig as step10dof_joystick_config
+from mujoco_playground._src.locomotion.step_10_dof import Step10DofEnv as step10dof_joystick
+from mujoco_playground._src.locomotion.step_10_dof import Step10DofConfig as step10dof_joystick_config
 
 
 _envs = {
